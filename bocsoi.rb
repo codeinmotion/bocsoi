@@ -16,9 +16,9 @@ end
 
 def score num_soi, c_turn
   if num_soi.eql? 1
-    point = 1
+    c_turn ? point = -1 : point = 1
   elsif num_soi.eql? 0
-    point = -1
+    c_turn ? point = 1 : point = -1
   elsif num_soi < 0
     point = nil
   else
